@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 
 int Sensor1 = 4;
 int Sensor2 = 7;
@@ -12,12 +11,11 @@ unsigned long timeSensor4;
 unsigned long Time;
 
 int relogio() {
-  int milisegundos = 0
+  int milisegundos = 0;
   
-  Sleep(1);
+  delay(1);
   milisegundos++;
-  system("cls");
-
+  
   return milisegundos;
 }
 
